@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="icon" type="image/png" href="img/teatro.png" />
+        <title>The Art of Theater</title>
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">The Art of Theater.</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <div class="d-flex align-items-center justify-content-center gap-1 border rounded px-2 py-1" aria-label="Language selector">
+                                <a class="border-0 bg-transparent p-0" href="https://felipeoliveira-escola.github.io/a-arte-do-teatro/" aria-label="Portuguese"><img src="img/Flag_of_Brazil.svg.webp" alt="Portuguese" style="width: 24px; height: 16px; object-fit: cover;" /></a>
+                                <a class="border-0 bg-transparent p-0" href="index-en.html" aria-label="English"><img src="img/Flag_of_the_United_States_(1912-1959).svg.webp" alt="English" style="width: 24px; height: 16px; object-fit: cover;" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Contact us!</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">If you enjoyed the presentation, leave us a review!</p>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!--Name-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full Name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Please enter your <strong>Full Name</strong> above.</div>
+                            </div>
+                            <!--Email-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="Name@domain.com" data-sb-validations="required,email" />
+                                <label for="email">Email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Please enter your <strong>Email</strong> above.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Invalid email.</div>
+                            </div>
+                            <!--Phone-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="Format: +55 (19) 99999-9999" data-sb-validations="required" />
+                                <label for="phone">Phone Number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Please enter your phone number above.</div>
+                            </div>
+                            <!--Rating-->
+                            <div class="form-floating mb-3">
+                                <label for="validationDefault04" class="form-label"></label>
+                                <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Rating</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                </select>
+                            </div>
+                            <!--Message-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Feedback" style="height: 10rem"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <!-- Submit success -->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Feedback sent successfully!</div>
+                                </div>
+                            </div>
+                            <!-- Submit error -->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message.</div></div>
+                            <!-- Submit button -->
+                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <img src="D:\Programação Web I\etecportasabertas3\startbootstrap-creative-gh-pages\assets\img\call_50dp_EA3323_FILL0_wght400_GRAD0_opsz48.svg" alt="Phone icon"></i>
+                        <br>
+                        <div>+55 (19) 99999-9999</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Felipe Jesus 2026 - &copy; All rights reserved.<br>Academic project for non-profit purposes.</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
